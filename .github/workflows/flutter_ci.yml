@@ -23,6 +23,9 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.16.0'
+          
+      - name: Disable Flutter analytics
+        run: flutter --disable-analytics    
 
       - name: 📦 Install dependencies
         run: flutter pub get
